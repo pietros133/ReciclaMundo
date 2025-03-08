@@ -1,4 +1,4 @@
-ReciclaMundo
+# ReciclaMundo
 
 A Reciclamundo é uma empresa dedicada à promoção de práticas sustentáveis e ao fortalecimento da consciência ambiental em nossa comunidade. Nosso projeto abrange três principais áreas de atuação:
 
