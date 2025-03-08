@@ -1,0 +1,182 @@
+/* Estilos gerais */
+body {
+    background-image: linear-gradient(10deg, #aeaaf3, #c8f3c8);
+}
+
+/* Configuração do cabeçalho */
+header {
+    margin: 0;
+    padding: 5px;
+    background-color: #4caf50;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.links:hover {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/* Configuração do slider */
+.slider {
+    width: 90%;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 25s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0%); }
+}
+
+img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Configuração das divs de conteúdo */
+.sobre, .projetos, .conscientizar {
+    display: block;
+    background-color: #e1dede;
+    margin: 0 auto;
+    width: 900px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Configuração do gráfico */
+canvas {
+    box-shadow: 4 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gra {
+    display: block;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    width: 900px;
+    height: 400px;
+    border-radius: 2px;
+    font-size: larger;
+    color: black;
+}
+
+/* Configuração do rodapé */
+.social-container {
+    background-color: #4caf50;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 90px;
+    padding: 5px;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    transition: 1s;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+/* Configuração das imagens */
+.imgs {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 250px;
+    border-radius: 3px;
+}
+
+/* Configuração dos títulos (h1) */
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Configuração dos parágrafos */
+.config_p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 2px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    .sobre, .projetos, .conscientizar, .gra {
+        width: 95%;
+    }
+
+    .imgs {
+        width: 100%;
+        height: auto;
+    }
+}
+/*Responsividade*/
+@media (max-width: 769px) {
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre, .projetos, .conscientizar, .gra {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .config_p {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .social-container {
+        height: auto;
+        padding: 5px;
+    }
+}
